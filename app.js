@@ -21,9 +21,7 @@ app.post("/api/bookadd",(req,res)=>{
      var getAuthor=req.body.getAuthor
     var getprice=req.body.getprice
  data={"getTitle":getTitle,"getAuthor":getAuthor,"getprice":getprice}
-// var data=req.body
-
-//    res.send(data)
+// var data=req.bodyc
    let mybook=new bookmodel(data)
    mybook.save((error,data)=>{
          if(error)
